@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dagacube</groupId>
-	<artifactId>dagacude-slots-app</artifactId>
+	<artifactId>dagacube-slots-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dagacude-slots-app</name>
-	<description>Dagacude casino slots application</description>
+	<name>dagacube-slots-app</name>
+	<description>Dagacube casino slots application</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
