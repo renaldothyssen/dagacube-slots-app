@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "d3325fd4-6a80-481b-b4b9-a92c34c18c92",
+		"name": "DagaCube-Slots",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Player Balance Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Retrieve a player's current balance on the DagaCube slots app."
+			},
+			"response": []
+		},
+		{
+			"name": "Player Bet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "transactionId",
+						"value": "1234569",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\":\"100\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/player/{playerId}/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"player",
+						"{playerId}",
+						"bet"
+					]
+				},
+				"description": "Retrieve a player's current balance on the DagaCube slots app."
+			},
+			"response": []
+		},
+		{
+			"name": "Player Win",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "transactionId",
+						"value": "1234569",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\":\"100\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/player/{playerId}/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"player",
+						"{playerId}",
+						"bet"
+					]
+				},
+				"description": "Retrieve a player's current balance on the DagaCube slots app."
+			},
+			"response": []
+		},
+		{
+			"name": "Player Transaction Logs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"wickj\",\n\t\"password\":\"swordfish\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/player/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"player",
+						"data"
+					]
+				},
+				"description": "Retrieve a player's current balance on the DagaCube slots app."
+			},
+			"response": []
+		}
+	]
+}
